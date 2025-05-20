@@ -1,103 +1,130 @@
-import Image from "next/image";
+"use client"
+
+import Navigation from '@/components/Navigation'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import BookAppointmentDialog from '@/components/BookAppointmentDialog'
+import { useState } from 'react'
+
+const services = [
+  'Hemo Dialysis (Home service)',
+  'SLED',
+  'Plasma Pheresis',
+  'Hemoperfusion',
+  'CRRT',
+  'Hemofeel',
+  'Cytosorb',
+]
+
+const sellingPoints = [
+  'Mobile Dialysis service on call available 24/7 in Hyderabad (Door step)',
+  'Care on dialysis by experienced senior technicians and nephrology team',
+  'Affordable prices for Home/Hospital dialysis',
+  'Service in all hospitals, nursing homes, healthcare & rehab centers',
+  'Availability of Dialysis Pack at Affordable Introductory Prices',
+]
+
+const contactNumbers = [
+  { label: 'For Appointment', number: '8464803865' },
+  { label: 'For Query', number: '6303660396' },
+]
 
 export default function Home() {
+  const [dialogOpen, setDialogOpen] = useState(false)
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="bg-white min-h-screen">
+      <Navigation />
+      {/* Hero Section */}
+      <section className="relative isolate min-h-screen flex items-center justify-center">
+        <img src="/photo1.jpg" alt="Home Hero" className="absolute inset-0 w-full h-full object-cover object-center z-0" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="relative z-20 mx-auto max-w-3xl text-center py-24">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <h1 className="text-5xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">NEPHRO D TECH</h1>
+            <p className="text-xl font-semibold text-pink-300 mb-2 drop-shadow">Care on Dialysis</p>
+            <h2 className="text-2xl font-bold text-white mb-4 drop-shadow">MOBILE DIALYSIS ON CALL</h2>
+            <p className="text-lg text-gray-100 mb-6 drop-shadow">We provide Dialysis Service in all Hospitals, Nursing Homes, Dialysis at Home, Healthcare & Rehab Centers in Hyderabad.</p>
+            <button
+              onClick={() => setDialogOpen(true)}
+              className="inline-block rounded-md bg-pink-500 px-6 py-3 text-lg font-semibold text-white shadow-md hover:bg-pink-400 transition-colors"
+            >
+              Book Appointment
+            </button>
+            <BookAppointmentDialog open={dialogOpen} onClose={() => setDialogOpen(false)} />
+          </motion.div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Selling Points Section */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-4xl px-4">
+          <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">Why Choose Us?</h3>
+          <ul className="grid gap-4 md:grid-cols-2">
+            {sellingPoints.map((point, idx) => (
+              <li key={idx} className="flex items-start gap-3 bg-blue-50 rounded-lg p-4 border-l-4 border-pink-400 shadow-sm">
+                <span className="text-pink-500 text-2xl">&#10003;</span>
+                <span className="text-gray-800 text-lg">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-12 bg-gradient-to-r from-blue-50 to-pink-50">
+        <div className="mx-auto max-w-4xl px-4">
+          <h3 className="text-2xl font-bold text-pink-600 mb-6 text-center">Our Services</h3>
+          <ul className="grid gap-6 md:grid-cols-2">
+            {services.map((service, idx) => (
+              <li key={idx} className="flex items-center gap-4 bg-white rounded-xl p-5 border border-blue-100 shadow-md hover:shadow-lg transition-shadow">
+                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 text-xl font-bold shadow-sm">
+                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#3B82F6" opacity="0.15"/><path d="M8 12l2 2 4-4" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </span>
+                <span className="text-gray-800 text-lg font-medium">{service}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-5xl px-4">
+          <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">Our Center Gallery</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {['/photo1.jpg', '/photo2.jpg', '/photo3.jpg'].map((src, idx) => (
+              <div key={idx} className="overflow-hidden rounded-2xl shadow-lg border border-blue-100 bg-white">
+                <img
+                  src={src}
+                  alt={`Dialysis Center Photo ${idx + 1}`}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact/Appointment Section */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-2xl px-4 text-center">
+          <h3 className="text-2xl font-bold text-blue-700 mb-4">Contact & Appointment</h3>
+          <div className="flex flex-col items-center gap-2 mb-4">
+            {contactNumbers.map((c, idx) => (
+              <div key={idx} className="text-lg font-semibold text-pink-600">
+                {c.label}: <a href={`tel:${c.number}`} className="underline hover:text-blue-600">{c.number}</a>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-700 mb-2">Opening date: <span className="font-semibold">13 December 2022</span></p>
+          <p className="text-gray-700">Business category: <span className="font-semibold">Hospital department</span></p>
+        </div>
+      </section>
     </div>
-  );
+  )
 }

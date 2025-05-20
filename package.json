@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "15.3.2",
+    "@heroicons/react": "^2.1.1",
+    "framer-motion": "^11.0.3",
+    "react-intersection-observer": "^9.8.0",
+    "@headlessui/react": "^1.7.18",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "typescript": "^5",
