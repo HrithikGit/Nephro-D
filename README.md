@@ -1,6 +1,6 @@
-# NephroD Tech Dialysis Center Website
+# Nephro D Tech Dialysis Center Website
 
-A modern, professional website for NephroD Tech, a leading provider of center-based and mobile dialysis services in Hyderabad.
+A modern, professional website for Nephro D Tech, a leading provider of center-based and home dialysis services in Hyderabad.
 
 ## Features
 - Beautiful, responsive design with blue and pink branding
@@ -14,7 +14,8 @@ A modern, professional website for NephroD Tech, a leading provider of center-ba
 ## Pages
 - **Home:** Overview, services, gallery, and appointment booking
 - **Center Services:** In-center dialysis features and treatments
-- **Mobile Services:** On-call/home dialysis, benefits, and services
+- **Home Services:** On-call/home dialysis, benefits, and services
+- **Our Centers:** List of all dialysis centers with locations and contact information
 - **About:** Mission, values, and business info
 - **Contact:** Hero image, contact info, and a modern contact form
 
@@ -47,4 +48,4 @@ You can deploy this site to Vercel, Netlify, or any platform that supports Next.
 
 ---
 
-**NephroD Tech** – Care on Dialysis, Hyderabad
+**Nephro D Tech** – Care on Dialysis, Hyderabad

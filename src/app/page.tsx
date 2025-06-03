@@ -17,7 +17,7 @@ const services = [
 ]
 
 const sellingPoints = [
-  'Mobile Dialysis service on call available 24/7 in Hyderabad (Door step)',
+  'Home Dialysis service on call available 24/7 in Hyderabad (Door step)',
   'Care on dialysis by experienced senior technicians and nephrology team',
   'Affordable prices for Home/Hospital dialysis',
   'Service in all hospitals, nursing homes, healthcare & rehab centers',
@@ -46,7 +46,7 @@ export default function Home() {
           >
             <h1 className="text-5xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">NEPHRO D TECH</h1>
             <p className="text-xl font-semibold text-pink-300 mb-2 drop-shadow">Care on Dialysis</p>
-            <h2 className="text-2xl font-bold text-white mb-4 drop-shadow">MOBILE DIALYSIS ON CALL</h2>
+            <h2 className="text-2xl font-bold text-white mb-4 drop-shadow">HOME DIALYSIS ON CALL</h2>
             <p className="text-lg text-gray-100 mb-6 drop-shadow">We provide Dialysis Service in all Hospitals, Nursing Homes, Dialysis at Home, Healthcare & Rehab Centers in Hyderabad.</p>
             <button
               onClick={() => setDialogOpen(true)}

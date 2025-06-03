@@ -63,9 +63,8 @@ export default function BookAppointmentDialog({ open, onClose }: { open: boolean
                       onChange={e => setService(e.target.value)}
                       className="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-pink-500 focus:ring-pink-500"
                     >
-                      <option>Center-Based Dialysis</option>
-                      <option>Mobile Dialysis</option>
-                      <option>Not Sure</option>
+                      <option>Center Dialysis</option>
+                      <option>Home Dialysis</option>
                     </select>
                   </div>
                   <div className="flex justify-end">

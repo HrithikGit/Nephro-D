@@ -1,28 +1,31 @@
 "use client"
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Link from 'next/link'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { BookAppointmentContext } from '@/components/ClientLayout'
 
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Center Services', href: '/center-services' },
-  { name: 'Mobile Services', href: '/mobile-services' },
+  { name: 'Home Services', href: '/mobile-services' },
+  { name: 'Our Centers', href: '/our-centers' },
   { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { openDialog } = useContext(BookAppointmentContext)
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between p-6 lg:px-8 bg-white/90 shadow-md" aria-label="Global">
         <div className="flex items-center lg:flex-1">
           <Link href="/" className="flex items-center gap-2 -m-1.5 p-1.5">
-            <Image src="/logo.jpg" alt="NephroD Tech Logo" width={40} height={40} className="rounded-full border-2 border-blue-500 bg-white" />
+            <Image src="/logo.jpg" alt="Nephro D Tech Logo" width={40} height={40} className="rounded-full border-2 border-blue-500 bg-white" />
             <span className="text-2xl font-bold text-blue-600 tracking-tight"><span className="text-pink-500">Nephro</span>D Tech</span>
           </Link>
         </div>
@@ -48,12 +51,12 @@ export default function Navigation() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            href="/contact"
+          <button
+            onClick={openDialog}
             className="rounded-md bg-pink-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500"
           >
             Book Appointment
-          </Link>
+          </button>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -61,8 +64,8 @@ export default function Navigation() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 -m-1.5 p-1.5">
-              <Image src="/logo.jpg" alt="NephroD Tech Logo" width={36} height={36} className="rounded-full border-2 border-blue-500 bg-white" />
-              <span className="text-2xl font-bold text-blue-600 tracking-tight"><span className="text-pink-500">Nephro</span>D Tech</span>
+              <Image src="/logo.jpg" alt="Nephro D Tech Logo" width={36} height={36} className="rounded-full border-2 border-blue-500 bg-white" />
+              <span className="text-2xl font-bold text-blue-600 tracking-tight"><span className="text-pink-500">Nephro</span><span className="ml-2"> </span>D Tech</span>
             </Link>
             <button
               type="button"
@@ -88,13 +91,12 @@ export default function Navigation() {
                 ))}
               </div>
               <div className="py-6">
-                <Link
-                  href="/contact"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-pink-500 hover:bg-pink-400"
-                  onClick={() => setMobileMenuOpen(false)}
+                <button
+                  onClick={() => { openDialog(); setMobileMenuOpen(false); }}
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-pink-500 hover:bg-pink-400 w-full text-left"
                 >
                   Book Appointment
-                </Link>
+                </button>
               </div>
             </div>
           </div>

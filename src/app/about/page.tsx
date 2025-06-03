@@ -46,8 +46,8 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">About NephroD Tech</h1>
-            <p className="text-lg text-gray-100 mb-6 drop-shadow">Mobile Dialysis service on call available 24/7 in Hyderabad. Affordable prices, experienced team, and care at your doorstep.</p>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">About Nephro D Tech</h1>
+            <p className="text-lg text-gray-100 mb-6 drop-shadow">Home Dialysis service on call available 24/7 in Hyderabad. Affordable prices, experienced team, and care at your doorstep.</p>
           </motion.div>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function About() {
       <section className="py-12 bg-gradient-to-r from-blue-50 to-pink-50">
         <div className="mx-auto max-w-2xl px-4 text-center">
           <h3 className="text-2xl font-bold text-pink-600 mb-4">Business Information</h3>
-          <p className="text-lg text-gray-700 mb-2">Business name: <span className="font-semibold">NephroD-tech</span></p>
+          <p className="text-lg text-gray-700 mb-2">Business name: <span className="font-semibold">Nephro D-tech</span></p>
           <p className="text-lg text-gray-700 mb-2">Business category: <span className="font-semibold">Hospital department</span></p>
           <p className="text-lg text-gray-700 mb-2">Opening date: <span className="font-semibold">13 December 2022</span></p>
           <div className="text-lg font-semibold text-pink-600 mb-2">

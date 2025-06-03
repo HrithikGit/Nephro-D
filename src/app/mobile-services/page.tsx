@@ -43,7 +43,7 @@ export default function MobileServices() {
       <Navigation />
       {/* Hero Section */}
       <section className="relative isolate min-h-screen flex items-center justify-center">
-        <img src="/photo5.jpg" alt="Mobile Dialysis Hero" className="absolute inset-0 w-full h-full object-cover object-center z-0" />
+        <img src="/photo5.jpg" alt="Home Dialysis Hero" className="absolute inset-0 w-full h-full object-cover object-center z-0" />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 mx-auto max-w-3xl text-center py-24">
           <motion.div
@@ -51,7 +51,7 @@ export default function MobileServices() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">Mobile Dialysis On Call</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">Home Dialysis On Call</h1>
             <p className="text-lg text-gray-100 mb-6 drop-shadow">We provide dialysis service in all hospitals, nursing homes, at home, and healthcare centers across Hyderabad. Affordable introductory prices and 24/7 availability.</p>
           </motion.div>
         </div>
@@ -60,7 +60,7 @@ export default function MobileServices() {
       {/* Benefits Section */}
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-4xl px-4">
-          <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">Why Choose Mobile Dialysis?</h3>
+          <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">Why Choose Home Dialysis?</h3>
           <ul className="grid gap-4 md:grid-cols-2">
             {benefits.map((benefit, idx) => (
               <li key={idx} className="flex items-start gap-3 bg-blue-50 rounded-lg p-4 border-l-4 border-pink-400 shadow-sm">
