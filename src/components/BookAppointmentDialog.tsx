@@ -12,10 +12,17 @@ export default function BookAppointmentDialog({ open, onClose }: { open: boolean
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  const indianPhoneRegex = /^[6-9]\d{9}$/;
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    if (!indianPhoneRegex.test(phone)) {
+      setLoading(false);
+      setError('Please enter a valid 10-digit Indian phone number.');
+      return;
+    }
     try {
       const res = await sendMail({ name, phone, message: service, subject: 'Appointment Booking' });
       setLoading(false);
@@ -87,12 +94,15 @@ export default function BookAppointmentDialog({ open, onClose }: { open: boolean
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                          Phone
+                          <span className="text-xs text-gray-500 ml-2">(Enter your 10 digit phone number)</span>
+                        </label>
                         <input
                           type="tel"
                           required
                           value={phone}
-                          onChange={e => setPhone(e.target.value)}
+                          onChange={e => setPhone(e.target.value.replace(/[^0-9]/g, '').slice(0, 10))}
                           className="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-pink-500 focus:ring-pink-500"
                         />
                       </div>
