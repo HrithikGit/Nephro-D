@@ -8,7 +8,7 @@ const centers = [
   {
     name: 'ONUS Hospitals',
     address: '17-1-382/N/2 Opp SBI Bank, Champapet, Hyderabad, Telangana 500079',
-    mapLink: 'https://maps.apple.com/place?address=17-1-382/N/2%20Opp%20SBI%20Bank%0AChampapet%0AHyderabad%0ATelangana%20500079%0AIndia&coordinate=17.347104,78.520048&name=ONUS%20Hospitals&place-id=I97B37CA265644083&map=explore',
+    mapLink: 'https://g.co/kgs/zxh4qAD',
     phone: '6303660396'
   },
   {
@@ -20,24 +20,6 @@ const centers = [
   {
     name: 'Raghavendra Hospitals - Multi-specialty',
     address: 'Hyderabad, Telangana',
-    mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '6303660396'
-  },
-  {
-    name: 'Raghavendra Hospitals - Uppal',
-    address: 'Uppal, Hyderabad, Telangana',
-    mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '6303660396'
-  },
-  {
-    name: 'Raghavendra Hospitals - Chepapet',
-    address: 'Chepapet, Hyderabad, Telangana',
-    mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '6303660396'
-  },
-  {
-    name: 'Raghavendra Hospitals - Thuguda',
-    address: 'Thuguda, Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/jjCV49c',
     phone: '6303660396'
   },

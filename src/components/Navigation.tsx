@@ -26,7 +26,7 @@ export default function Navigation() {
         <div className="flex items-center lg:flex-1">
           <Link href="/" className="flex items-center gap-2 -m-1.5 p-1.5">
             <Image src="/logo.jpg" alt="Nephro D Tech Logo" width={40} height={40} className="rounded-full border-2 border-blue-500 bg-white" />
-            <span className="text-2xl font-bold text-blue-600 tracking-tight"><span className="text-pink-500">Nephro</span>D Tech</span>
+            <span className="text-2xl font-bold text-blue-600 tracking-tight"><span className="text-pink-500">Nephro</span> DTech</span>
           </Link>
         </div>
         <div className="flex lg:hidden">

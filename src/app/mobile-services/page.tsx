@@ -51,7 +51,7 @@ export default function MobileServices() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">Home Dialysis On Call</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">MOBLIE Dialysis On Call</h1>
             <p className="text-lg text-gray-100 mb-6 drop-shadow">We provide dialysis service in all hospitals, nursing homes, at home, and healthcare centers across Hyderabad. Affordable introductory prices and 24/7 availability.</p>
           </motion.div>
         </div>
