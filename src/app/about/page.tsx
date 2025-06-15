@@ -77,11 +77,9 @@ export default function About() {
           <p className="text-lg text-gray-700 mb-2">Business category: <span className="font-semibold">Hospital department</span></p>
           <p className="text-lg text-gray-700 mb-2">Opening date: <span className="font-semibold">13 December 2022</span></p>
           <div className="text-lg font-semibold text-pink-600 mb-2">
-            For Appointment: <a href="tel:8464803865" className="underline hover:text-blue-600">8464803865</a>
+            For Appointment or Query or Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
           </div>
-          <div className="text-lg font-semibold text-pink-600 mb-4">
-            For Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
-          </div>
+
         </div>
       </section>
     </div>

@@ -9,49 +9,49 @@ const centers = [
     name: 'ONUS Hospitals',
     address: '17-1-382/N/2 Opp SBI Bank, Champapet, Hyderabad, Telangana 500079',
     mapLink: 'https://maps.apple.com/place?address=17-1-382/N/2%20Opp%20SBI%20Bank%0AChampapet%0AHyderabad%0ATelangana%20500079%0AIndia&coordinate=17.347104,78.520048&name=ONUS%20Hospitals&place-id=I97B37CA265644083&map=explore',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Apex Hospitals',
     address: 'Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/sgvXLhq',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Raghavendra Hospitals - Multi-specialty',
     address: 'Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Raghavendra Hospitals - Uppal',
     address: 'Uppal, Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Raghavendra Hospitals - Chepapet',
     address: 'Chepapet, Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Raghavendra Hospitals - Thuguda',
     address: 'Thuguda, Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/jjCV49c',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Brinnova - Rehabilitation Center & Physiotherapy',
     address: 'Banjara Hills, Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/V9rZC9y',
-    phone: '8464803865'
+    phone: '6303660396'
   },
   {
     name: 'Nikhil Hospitals',
     address: 'Hyderabad, Telangana',
     mapLink: 'https://g.co/kgs/pwqsmm5',
-    phone: '8464803865'
+    phone: '6303660396'
   }
 ]
 
@@ -121,11 +121,9 @@ export default function OurCenters() {
         <div className="mx-auto max-w-2xl px-4 text-center">
           <h3 className="text-2xl font-bold text-pink-600 mb-4">Need Help Finding a Center?</h3>
           <div className="text-lg font-semibold text-pink-600 mb-2">
-            For Appointment: <a href="tel:8464803865" className="underline hover:text-blue-600">8464803865</a>
+            For Appointment or Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
           </div>
-          <div className="text-lg font-semibold text-pink-600 mb-4">
-            For Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
-          </div>
+
           <p className="text-gray-700">Our team will help you find the nearest center and schedule your appointment.</p>
         </div>
       </section>

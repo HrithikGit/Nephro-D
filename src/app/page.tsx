@@ -25,8 +25,7 @@ const sellingPoints = [
 ]
 
 const contactNumbers = [
-  { label: 'For Appointment', number: '8464803865' },
-  { label: 'For Query', number: '6303660396' },
+  { label: 'For Appointment or Query', number: '6303660396' }
 ]
 
 export default function Home() {

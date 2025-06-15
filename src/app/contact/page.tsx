@@ -8,7 +8,7 @@ const contactInfo = [
   {
     name: 'Phone',
     description: 'Call us for immediate assistance',
-    value: '8464803865',
+    value: '6303660396',
     icon: PhoneIcon,
   },
   {
@@ -42,7 +42,6 @@ export default function Contact() {
             >
               <h2 className="text-2xl font-bold text-pink-300 mb-4 drop-shadow-lg">Send Us a Message</h2>
               <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">Contact Nephro D Tech</h1>
-              <p className="text-lg text-gray-100 mb-6 drop-shadow">For appointments, queries, or more information about our mobile and center-based dialysis services, reach out to us anytime.</p>
             </motion.div>
           </div>
           <div className="flex-1 w-full max-w-md mx-auto">
@@ -95,13 +94,10 @@ export default function Contact() {
       {/* Appointment Section */}
       <section className="py-12 bg-gradient-to-r from-blue-50 to-pink-50">
         <div className="mx-auto max-w-2xl px-4 text-center">
-          <h3 className="text-2xl font-bold text-pink-600 mb-4">For Appointment & Queries</h3>
           <div className="text-lg font-semibold text-pink-600 mb-2">
-            For Appointment: <a href="tel:8464803865" className="underline hover:text-blue-600">8464803865</a>
+            For Appointment or Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
           </div>
-          <div className="text-lg font-semibold text-pink-600 mb-4">
-            For Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
-          </div>
+
           <p className="text-gray-700">Business category: <span className="font-semibold">Hospital department</span></p>
         </div>
       </section>
