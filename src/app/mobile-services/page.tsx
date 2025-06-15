@@ -51,7 +51,7 @@ export default function MobileServices() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">Home Dialysis On Call</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">MOBLIE Dialysis On Call</h1>
             <p className="text-lg text-gray-100 mb-6 drop-shadow">We provide dialysis service in all hospitals, nursing homes, at home, and healthcare centers across Hyderabad. Affordable introductory prices and 24/7 availability.</p>
           </motion.div>
         </div>
@@ -94,11 +94,9 @@ export default function MobileServices() {
         <div className="mx-auto max-w-2xl px-4 text-center">
           <h3 className="text-2xl font-bold text-blue-700 mb-4">Contact & Appointment</h3>
           <div className="text-lg font-semibold text-pink-600 mb-2">
-            For Appointment: <a href="tel:8464803865" className="underline hover:text-blue-600">8464803865</a>
+            For Appointment or Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
           </div>
-          <div className="text-lg font-semibold text-pink-600 mb-4">
-            For Query: <a href="tel:6303660396" className="underline hover:text-blue-600">6303660396</a>
-          </div>
+
           <p className="text-gray-700">Business category: <span className="font-semibold">Hospital department</span></p>
         </div>
       </section>

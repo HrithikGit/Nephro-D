@@ -1,7 +1,6 @@
 "use client"
 
 import Navigation from '@/components/Navigation'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import BookAppointmentDialog from '@/components/BookAppointmentDialog'
 import { useState } from 'react'
@@ -25,8 +24,7 @@ const sellingPoints = [
 ]
 
 const contactNumbers = [
-  { label: 'For Appointment', number: '8464803865' },
-  { label: 'For Query', number: '6303660396' },
+  { label: 'For Appointment or Query', number: '6303660396' }
 ]
 
 export default function Home() {
@@ -46,7 +44,7 @@ export default function Home() {
           >
             <h1 className="text-5xl font-extrabold tracking-tight text-white mb-2 drop-shadow-lg">NEPHRO D TECH</h1>
             <p className="text-xl font-semibold text-pink-300 mb-2 drop-shadow">Care on Dialysis</p>
-            <h2 className="text-2xl font-bold text-white mb-4 drop-shadow">HOME DIALYSIS ON CALL</h2>
+            <h2 className="text-2xl font-bold text-white mb-4 drop-shadow">MOBLIE DIALYSIS ON CALL</h2>
             <p className="text-lg text-gray-100 mb-6 drop-shadow">We provide Dialysis Service in all Hospitals, Nursing Homes, Dialysis at Home, Healthcare & Rehab Centers in Hyderabad.</p>
             <button
               onClick={() => setDialogOpen(true)}

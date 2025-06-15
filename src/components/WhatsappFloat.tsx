@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function WhatsappFloat() {
   return (
     <Link
-      href="https://wa.me/918464803865"
+      href="https://wa.me/916303660396"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
