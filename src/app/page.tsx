@@ -1,7 +1,6 @@
 "use client"
 
 import Navigation from '@/components/Navigation'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import BookAppointmentDialog from '@/components/BookAppointmentDialog'
 import { useState } from 'react'
